@@ -35,7 +35,7 @@ a<-1
 #mybam is a named vector of the file locations for each BAM file
 b<-length(mybam)
 #a while statment will feed chunks of BAM records to the counter
-while(a<b){
+while(a<=b){
 #open the parrallel cluster  
   parallelCluster <- parallel::makeCluster(parallel::detectCores())
   #print(parallelCluster) 
